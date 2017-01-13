@@ -1,0 +1,4 @@
+During the development of the front-end and back-end of toolc compiler we were able to translate our programs into java bytecode and execute them using our own installation of the java virtual machine. This process is very straight forward, for the same constructs you always do the same translations. The advantage of it is that we were able to tell the eventual programmer of toolc the errors of the syntax or the semantics of his code.
+
+Now we address the task of improving the performance of the code. Not all ways of writing code are as efficient as others and some inefficiencies can be treated in a machine-independent fashion. In this report, I explain the implementation of live variable analysis and dead code elimination together with the development of a framework that makes possible to implement further optimizations. I restrict my analysis to intra-procedural analysis which has important consequences in the implementation aspects. 
+

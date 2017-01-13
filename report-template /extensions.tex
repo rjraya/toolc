@@ -1,0 +1,7 @@
+From the implementation part of this report, it is pretty clear that although I got a working implementation for a particular optimization it would be easy to extend it with other optimizations. Normally, applying different optimizations in a sequence leads to a much optimized code. 
+
+I provide a reaching copies and a copy propagation implementation. If it was to be integrated in the system some changes should be made. First, in package untac the generation of the untac code should be changed to consider the case in which we had several copies of temporal variables ahead. As described in the implementation part, a careful analysis is required specially on side effects. Also, code generation which is implemented in package \emph{code} in file \emph{UNTAC\_CodeGeneration} should take into account the existence of temporal variables. 
+
+I provide a fully working reaching definition analysis in package dfa (as the rest of analysis of the framework)it may be extended to provide a loop invariant code optimization. Some good slides on how to do this bit can be found in \cite{LoopSlides}. This kind of optimization is vital as most imperative languages as toolc spend most of their time in loops. 
+
+Finally, another interesting optimization which is less difficult to handle than copy propagation and that presents an example of a monotone but non distributive framework as well as an example of an infinite domain is constant folding. For this framework more details may be found in chapter nine of \cite{DragonBook}.

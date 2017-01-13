@@ -1,0 +1,13 @@
+---------------------------
+compute
+---------------------------
+L0:
+cjump if (!((!(num < IntLit(0))) 
+   && (!(num == IntLit(0))))) to L1:
+Removed dead code: aux = num
+num = (num - IntLit(1))
+println(num)
+jump L0:
+L1:
+Removed dead code: num_aux = num
+return num

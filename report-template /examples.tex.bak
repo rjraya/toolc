@@ -1,0 +1,21 @@
+Dead code elimination should remove code that depends of dead variables as it is formalized in section 3.1 of this document. In what follows I specify the expected output in some program examples.
+
+\lstinputlisting
+  [caption=Dead code elimination, float, linerange={1-21}, firstnumber=1]
+  {code/example1.tool}
+
+
+Here the expected output would look at follows:
+
+\lstinputlisting
+  [caption=Output pseudo-code program expected for first example, float, linerange={1-21}, firstnumber=1]
+  {code/exampleoutput1}
+
+where the two assigments to variables that are not used in the future are removed.
+
+However if for instance, \emph{aux} was a class variable then we could only remove the second assignment because the computation could be reused in future calls and as we are doing intra-procedural analysis we have no control on it:
+
+
+\lstinputlisting
+  [caption=Output pseudo-code program expected when aux is class variable, float, linerange={1-21}, firstnumber=1]
+  {code/exampleoutput1}

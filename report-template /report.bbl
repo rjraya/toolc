@@ -1,0 +1,35 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aho(2007)]{DragonBook}
+A.~V. Aho.
+\newblock \emph{{C}ompilers. {P}rinciples, {T}echniques and {T}ools}.
+\newblock Pearson, 2nd edition, 2007.
+
+\bibitem[Pingali(2013)]{LoopSlides}
+K.~Pingali.
+\newblock Loop optimizations and pointer analysis, 2013.
+\newblock URL
+  \url{https://www.cs.utexas.edu/~pingali/CS380C/2013/lectures/strengthReduction.pdf}.
+
+\bibitem[Schwartzbach(2017)]{WIDEinstr}
+M.~I. Schwartzbach.
+\newblock Jvm documentation, 2017.
+\newblock URL \url{https://cs.au.dk/~mis/dOvs/jvmspec/ref-wide.html}.
+
+\bibitem[Spuler(1994)]{SideEffects}
+D.~Spuler.
+\newblock Compiler detection of function call side effects.
+\newblock Technical report, James Cook University, 1994.
+
+\bibitem[Suter(2017)]{CafeBabeError}
+P.~Suter.
+\newblock Cafebabe library implementation, 2017.
+\newblock URL
+  \url{https://github.com/psuter/cafebabe/blob/49dce3c83450f5fa0b5e6151a537cc4b9f6a79a6/src/main/scala/cafebabe/CodeHandler.scala}.
+
+\end{thebibliography}

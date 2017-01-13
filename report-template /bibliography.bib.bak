@@ -1,0 +1,62 @@
+@book{TigerBook,
+    title={{M}odern {C}ompiler {I}mplementation in {J}ava},
+    author={Andrew W Appel},
+    year={2002},
+    publisher={Cambridge University Press},
+    edition={2nd},
+    pages={501}
+}
+
+@book{DragonBook,
+    title={{C}ompilers. {P}rinciples, {T}echniques and {T}ools},
+    author={Alfred V Aho},
+    year={2007},
+    publisher={Pearson},
+    edition={2nd},
+    pages={993}
+}
+
+@book{MuchnikBook,
+    title={{A}dvanced {C}ompiler, {D}esign and {I}mplementation},
+    author={Steven S. Muchnick},
+    year={1997},
+    publisher={Morgan Kaufmann Publishers},
+    edition={},
+    pages={856}
+}
+
+@TechReport{SideEffects,
+author = {D.A. Spuler},
+title = {Compiler Detection of Function Call Side Effects},
+institution = {James Cook University},
+year = {1994},
+OPTkey = {•},
+OPTtype = {•},
+OPTnumber = {•},
+OPTaddress = {•},
+OPTmonth = {January},
+OPTnote = {•},
+OPTannote = {•}
+}
+
+
+@online{CafeBabeError,
+author = {Philippe Suter},
+title = {CafeBabe library implementation},
+year = {2017},
+url = {https://github.com/psuter/cafebabe/blob/49dce3c83450f5fa0b5e6151a537cc4b9f6a79a6/src/main/scala/cafebabe/CodeHandler.scala},
+}
+
+@online{WIDEinstr,
+author = {Michael I. Schwartzbach},
+title = {JVM documentation},
+year = {2017},
+url = {https://cs.au.dk/~mis/dOvs/jvmspec/ref-wide.html},
+}
+
+@online{LoopSlides,
+author = {Keshav Pingali},
+title = {Loop Optimizations and Pointer Analysis },
+year = {2013},
+url = {https://www.cs.utexas.edu/~pingali/CS380C/2013/lectures/strengthReduction.pdf},
+}

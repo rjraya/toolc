@@ -1,0 +1,185 @@
+\subsection{Theoretical Background}
+
+\subsubsection{Intermediate representations}
+
+The abstract interpretation phase of a compiler is traditionally placed between the front-end and the back-end of the compiler being built. In our case, this would be between type checking and code generation phases.
+
+However, normal optimization frameworks work with intermediate representations and in our work we introduced two of them. The second representation is a small variation of the first and it is introduced for clearness purposes. 
+
+If we were to justify why an intermediate representation is suitable for our problem, we could give some reasons. First, this representation is independent from the source language so it could be reused for other languages as well. Second, it is a sequential representation which can be easily modified. In our case, the two constructs that motivate the introduction of intermediate representation are if and while statements. 
+
+Once we have justified the introduction of intermediate codes for our framework we can explain its design. We followed the instructions in chapter six of \cite{DragonBook} implementing a three-address code. Three address code is characterised by the fact that there is at most one operator on the right side of an instruction. For this purpose the language introduces temporary variables that hold partial results. For instance, the expression $x + y*z$ would be translated into two instructions with on operand each, namely $t_1 = y * z$ and $t_2 = x + t_1$. We will refer to the process of decomposing source code instructions in this format as unfolding. 
+
+On the one hand, the collection of instructions includes some conceptual elements which where absent in the original toolc language to translate if and while constructs, namely unconditional and conditional jumps and labels. On the other hand, addresses are variables, constants and temporary variables introduced by the unfolding process. 
+
+We used a second intermediate representation to approach code generation. Due to the scope of the project we could not focus on the implementation of code generation optimizations that are described in chapter six of \cite{DragonBook}. To avoid generating a significant number of load and store instructions for temporary variables we were compelled to fold the code again (after applying the optimizations) into a tree-like representation. Not all optimizations are suitable for this process as we will discuss in the implementation details section. 
+
+\subsubsection{The control-flow graph}
+
+First step to analyze toolc programs is to build a control flow graph.
+
+The representation of such graph is based on basic blocks which are defined as groups of instructions such that the control flow only enter them through its first instruction and control leaves the block without halting or branching except perhaps the last instruction of the block. In our case each basic block will be holding only one instruction. 
+
+To connect different basic blocks we used these principles:
+
+Take basic block $B_1$ and $B_2$. There is an edge from $B_1$ to $B_2$ if:
+
+\begin{itemize}
+\item $B_1$ is an unconditional or conditional jump with target $B_2$.
+\item $B_2$ follows $B_1$ in the three-address-code and $B_2$ is not an unconditional jump.
+\item $B_1$ is the entry block and $B_2$ is the first instruction of the three-address code.
+\item $B_1$ is the return instruction of the three-address code and $B_2$ is the exit block. 
+\end{itemize}
+
+Note that applying these rules we are effectively implementing intra-procedural analysis, that is, we are restricting our analysis to each method individually.
+
+
+\subsubsection{The data-flow framework}
+
+We first review the basic definitions on which our code rely, they are taken from \cite{DragonBook}:
+
+\begin{definition}[Data-flow analysis framework]
+A data-flow analysis framework consists of
+\begin{itemize}
+\item A direction of the data flow  D, either forwards or backwards.
+\item A semilattice with a domain of values V and a meet operator $\land$. 
+\item A family of transfer functions F from V to V that contains the identity function and is closed under composition. 
+\end{itemize}
+\end{definition}
+
+We have the following two equivalent definitions for a meet-semilattice:
+
+\begin{definition}[Semilattice-Algebraic definition]
+A set V with a binary operator $\land$ is a meet-semilattice if $\land$ is idempotent, commutative and associative. Furthermore, there exists a neutral element for $\land$, $\top \in V$.
+\end{definition}
+
+\begin{definition}[Semilattice-Partial order definition]
+A set V with a partial order $\leq$ relation is a meet-semilattice if every two elements in V have a greatest lower bound.
+\end{definition}
+
+The connection between the two definitions is as follows $x \leq y \iff x \land y = x$.
+
+To study the rate of convergence of a data-flow analysis algorithm we introduce the following notion:
+
+\begin{definition}[Height of a semilattice]
+Define $x < y \iff x \leq y$ and $x \neq y$. An ascending chain in a semilattice is a finite sequence of elements related with $<$ relation as $x_1 < x_2 < \cdots < x_n$. Then we define the height of that semilattice as the length of the largest ascending chain counted as the number of $<$ symbols employed.
+\end{definition}
+
+To prove properties of convergence of the algorithm employed we need to define some further properties on the frameworks used:
+
+\begin{definition}[Monotone framework]
+A data-flow framework is monotone if given any function $f \in F$ and any pair of elements $x,y \in V$ we have $x \leq y \implies f(x) \leq f(y)$ or equivalently $f(x \land y) \leq f(x) \land f(y)$.
+\end{definition}
+
+\begin{definition}[Distributive framework]
+A data-flow framework is distributive if given any function $f \in F$ and any pair of elements $x,y \in V$ we have $f(x \land y) = f(x) \land f(y)$.
+\end{definition}
+
+Clearly distributivity implies monotonicity. The converse does not hold.
+
+\subsubsection{Modelling our optimizations to fit the data-flow framework}
+
+Here we describe in detail the set-up for live variable analysis. There are other analysis for which we gave a working implementation but need some adjustment in the intermediate codes to provide full optimization capabilities. These are commented in the last section of this document. 
+
+Consider the problem of live variable analysis:
+
+\begin{definition}[Live variable analysis]
+For each variable x and each program point p, determine if the value of x at p is used along some path in the flow graph starting at p.
+
+If so, we will say that x is live at p. Otherwise, we will say that x is dead at p. 
+\end{definition}
+
+Clearly, no variable is live after the return instruction, that is, $OUT[EXIT] = \emptyset$. If we could tell what variables are live before the execution of an instruction given that we know the live variables after its execution, by induction, we could determine the live variables at every point of any program no matter its size. The equations that tell us how to do are our tranfer functions. 
+
+So the framework to solve this problem would have the following parameters: $D = backwards$, $V$ the set of variables of the program, $\land$ would be $\cup$ and the transfer function would be $IN[B] = use_B \cup (OUT[B] \cup def_B)$ where:
+
+\begin{itemize}
+\item $use_B$ is the set of variables whose values may be used in B prior to any definition of the variable. 
+\item $def_B$ is the set of variables defined in B prior to any use o the variable in B.
+\end{itemize}
+
+Why is $\cup$ the meet operator? Because of the equation $OUT[B] = \cup_{S:\text{S is successor of B}} IN[S]$. This tells us that the infimum of a set of lattice values is computed with the union operator. This can be visualized using Hasse diagrams described in the literature. 
+
+\begin{definition}[Dead code elimination]
+Eliminate code that only affects dead variables.
+\end{definition}
+
+This optimization is clear by itself some details dealing with the fact that we are doing an intra-procedural are discussed in further sections.
+
+
+\subsubsection{The solving algorithm}
+
+We present the algorithm to solve problems formulated in terms of our framework as Algorithm \ref{ga:general_algorithm}:
+
+\begin{algorithm}[Iterative algorithm for general frameworks]
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+    \Input{1.A data-flow graph, with special nodes ENTRY and EXIT.\\
+     2.A direction of the data-flow.\\
+     3.A set of values V.\\
+     4. A meet operator $\land$.\\
+     5. Set of functions $F$. $f_B$ is the transfer function for block B.\\
+     6. Constant $v_{ENTRY}$ if forward or constant $v_{EXIT}$ if backward.
+    }
+    \Output{Values $IN[B]$,$OUT[B]$ for each block in the graph.}
+    \BlankLine
+    \If{$D == forward$}{
+      $OUT[ENTRY] = v_{ENTRY}$\\
+      \For{each basic block B other than ENTRY}{ $OUT[B] \gets \top$}
+       \While{changes to any $OUT$ occur}{
+        \For{each basic block B other than ENTRY}{
+         $IN[B] \gets \land_{\text{P a predecessor of B}} OUT[P]$
+         $OUT[B] \gets f_B(IN[B])$
+        }
+       }
+      }
+    \Else{
+      $IN[EXIT] = v_{EXIT}$\\
+      \For{each basic block B other than EXIT}{ $IN[B] \gets \top$}
+       \While{changes to any $IN$ occur}{
+        \For{each basic block B other than EXIT}{
+         $OUT[B] \gets \land_{\text{S a successor of B}} IN[S]$
+         $IN[B] \gets f_B(OUT[B])$
+       }
+      }
+     }
+     
+     \caption{Iterative algorithm for general frameworks}\label{ga:general_algorithm}
+\end{algorithm}
+
+We have the following theorem:
+
+\begin{theorem}
+1. If the general algorithm converges, then the result is a solution to the data-flow equations.\\
+2. If the framework is monotone and of finite height, then the algorithm is guaranteed to converge.
+\end{theorem}
+
+Since the set of variables is finite, live variable analysis lattice will have a finite height and since their transfer functions are monotone we have the following corollary:
+
+\begin{corollary}
+The implementation of live variable analysis converges to a valid solution. 
+\end{corollary}
+
+
+\subsection{Implementation Details}
+
+The solution is implemented using five different packages. It may seem like a wasteful effort for just implementing one optimization. However, this framework can be easily extended to hold a lot of different optimizations. As an example I provide a copy propagation optimization. I did not have enough time to fit it into the framework I describe why in what follows.
+
+\subsubsection{Handling temporary variables and side-effects}
+
+My first (naive) approach was to translate three address instructions (defined in package tac) directly into the code generation phase. This produced of course a great quantity of extra load and store instructions. Again, \cite{DragonBook} studies some optimizations to get rid of these. However, the big problem was an exception in the CafeBabe library \cite{CafeBabeError}. The pertinent error is \emph{"Wide is unsupported for now."}. According to \cite{WIDEinstr} WIDE is used: \emph{to extend the range of local variables available to the instruction from 8 bits (i.e. 0-255) to 16 bits}. Having around two hundred temporal variables I had run out of space. 
+
+My second approach was to fold the program into another intermediate representation (defined in package untac) that would get rid of temporal variables before code generation. But it turns out that there are certain situations when you cannot get rid of temporal variables at least if you combine some optimizations. In my case I did the work with dead code optimization and copy propagation.
+
+Basically, the problem goes as follows. Without any optimization, if you scan the list of three-address code instructions and you get an instruction that defines a temporary variable, you will always find one and only one same temporary variable ahead in the list. If you introduce dead code elimination then you may or may not find that temporary variable in the list but if you find it, there will be only one occurrence. Combining dead code elimination and copy propagation changes the situation. Then you could find several times a temporary variable ahead. 
+
+The situation would not be so difficult if toolc did not have side effects. Basically, side-effects are incorporated to the language by constructs like println or class variable accesses which could appear in method calls. Therefore, propagating method calls is inefficient and incorrect. So doing copy propagation implies keeping temporary variables. 
+
+\subsubsection{Improving the code for variable analysis}
+
+At the end, although we tried different optimizations we decided to be conservative an restrict ourselves to live variable analysis and dead code elimination. However, the previous work proved useful to improve the quality of the code for this analysis. 
+
+In package opt we define dead code elimination. There, method \emph{removeIfNotLive} defines the conditions under which dead code can be eliminated. We state that class variables dependent code cannot be removed because it can be reused in other computation producing different results. Also, method calls cannot be removed because they may change class variables or produce other side effects which would change program state or behaviour. 
+
+Interestingly, there exist \cite{SideEffects} techniques to detect if method calls have side effects so that we could decide more accurately if we need to optimize or not a given method call or remove code that depends on class variables. 
+

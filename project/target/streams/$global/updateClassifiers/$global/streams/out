@@ -1,0 +1,394 @@
+[debug] :: resolving dependencies :: default#project$sources_2.10;0.1-SNAPSHOT
+[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'compile'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->default(compile)]
+[info] Resolving org.scala-lang#scala-library;2.10.5 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56649d80
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.5
+[debug] 	found org.scala-lang#scala-library;2.10.5 in sbt-chain
+[debug] 	[2.10.5] org.scala-lang#scala-library;2.10.5
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)]
+[info] Resolving com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8edf240
+[debug] sbt-chain: module revision found in cache: com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0
+[debug] 	found com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 in sbt-chain
+[debug] 	[4.0.0] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)]
+[info] Resolving org.scalaz#scalaz-core_2.10;7.1.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32d150ff
+[debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.10;7.1.0
+[debug] 	found org.scalaz#scalaz-core_2.10;7.1.0 in sbt-chain
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)]
+[info] Resolving org.scalaz#scalaz-effect_2.10;7.1.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6885e863
+[debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-effect_2.10;7.1.0
+[debug] 	found org.scalaz#scalaz-effect_2.10;7.1.0 in sbt-chain
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master]
+[debug] resolving dependencies for configuration 'runtime'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->master]
+[debug] resolving dependencies for configuration 'test'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->master]
+[debug] resolving dependencies for configuration 'provided'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [provided]
+[debug] resolving dependencies for configuration 'optional'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [optional]
+[debug] resolving dependencies for configuration 'compile-internal'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile-internal->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile-internal->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile-internal->master]
+[debug] resolving dependencies for configuration 'runtime-internal'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->master]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime-internal->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime-internal->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime-internal->master]
+[debug] resolving dependencies for configuration 'test-internal'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [runtime->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test->master]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [test-internal->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [test-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.10;7.1.0 [test-internal->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test-internal->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test-internal->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test-internal->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scalaz#scalaz-effect_2.10;7.1.0 [test-internal->master]
+[debug] resolving dependencies for configuration 'plugin'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [plugin]
+[debug] resolving dependencies for configuration 'sources'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [sources]
+[debug] resolving dependencies for configuration 'docs'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [docs]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for default#project$sources_2.10;0.1-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [scala-tool->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [scala-tool->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [scala-tool->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.5 [scala-tool->default(compile)]
+[info] Resolving org.scala-lang#scala-compiler;2.10.5 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.5 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.5
+[debug] 	found org.scala-lang#scala-compiler;2.10.5 in sbt-chain
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.5 [scala-tool->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.5 [scala-tool->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.5 [scala-tool->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.10.5 [scala-tool->default(compile)]
+[info] Resolving org.scala-lang#scala-reflect;2.10.5 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.5 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.5
+[debug] 	found org.scala-lang#scala-reflect;2.10.5 in sbt-chain
+[debug] 	[2.10.5] org.scala-lang#scala-reflect;2.10.5
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.10.5 [scala-tool->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.10.5 [scala-tool->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.10.5 [scala-tool->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#jline;2.10.5 [scala-tool->default(compile)]
+[info] Resolving org.scala-lang#jline;2.10.5 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.5 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#jline;2.10.5
+[debug] 	found org.scala-lang#jline;2.10.5 in sbt-chain
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#jline;2.10.5 [scala-tool->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#jline;2.10.5 [scala-tool->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.scala-lang#jline;2.10.5 [scala-tool->master]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.fusesource.jansi#jansi;1.4 [scala-tool->default(compile)]
+[info] Resolving org.fusesource.jansi#jansi;1.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
+[debug] 	found org.fusesource.jansi#jansi;1.4 in sbt-chain
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.fusesource.jansi#jansi;1.4 [scala-tool->runtime]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.fusesource.jansi#jansi;1.4 [scala-tool->compile]
+[debug] == resolving dependencies default#project$sources_2.10;0.1-SNAPSHOT->org.fusesource.jansi#jansi;1.4 [scala-tool->master]
+[debug] 	resolved ivy file produced in cache
+[debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.5!scala-library.jar
+[debug] 		tried /home/usuario/.ivy2/local/org.scala-lang/scala-library/2.10.5/srcs/scala-library-sources.jar
+[debug] 		tried https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-sources.jar
+[info] downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.5!scala-library.jar(src) (4735ms)
+[debug] 	[NOT REQUIRED] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!sbteclipse-plugin.jar
+[debug] 		tried /home/usuario/.ivy2/local/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/srcs/sbteclipse-plugin-sources.jar
+[debug] 		tried https://jcenter.bintray.com/com/typesafe/sbteclipse/sbteclipse-plugin_2.10_0.13/4.0.0/sbteclipse-plugin-4.0.0-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://jcenter.bintray.com/com/typesafe/sbteclipse/sbteclipse-plugin_2.10_0.13/4.0.0/sbteclipse-plugin-4.0.0-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/sbteclipse/sbteclipse-plugin_2.10_0.13/4.0.0/sbteclipse-plugin-4.0.0-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/sbteclipse/sbteclipse-plugin_2.10_0.13/4.0.0/sbteclipse-plugin-4.0.0-sources.jar
+[warn] 	[FAILED     ] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!sbteclipse-plugin.jar(src):  (0ms)
+[warn] ==== local: tried
+[warn]   /home/usuario/.ivy2/local/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/srcs/sbteclipse-plugin-sources.jar
+[warn] ==== jcenter: tried
+[warn]   https://jcenter.bintray.com/com/typesafe/sbteclipse/sbteclipse-plugin_2.10_0.13/4.0.0/sbteclipse-plugin-4.0.0-sources.jar
+[warn] ==== public: tried
+[warn]   https://repo1.maven.org/maven2/com/typesafe/sbteclipse/sbteclipse-plugin_2.10_0.13/4.0.0/sbteclipse-plugin-4.0.0-sources.jar
+[debug] 		tried /home/usuario/.ivy2/local/org.scalaz/scalaz-core_2.10/7.1.0/srcs/scalaz-core_2.10-sources.jar
+[debug] 		tried /home/usuario/.ivy2/local/org.scalaz/scalaz-core_2.10/7.1.0/jars/scalaz-core_2.10.jar
+[debug] 		tried https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0-sources.jar
+[info] downloading https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0-sources.jar
+[info] 	[SUCCESSFUL ] org.scalaz#scalaz-core_2.10;7.1.0!scalaz-core_2.10.jar(src) (1484ms)
+[debug] 		tried https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar
+[info] downloading https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar
+[info] 	[SUCCESSFUL ] org.scalaz#scalaz-core_2.10;7.1.0!scalaz-core_2.10.jar (16794ms)
+[debug] 		tried /home/usuario/.ivy2/local/org.scalaz/scalaz-effect_2.10/7.1.0/srcs/scalaz-effect_2.10-sources.jar
+[debug] 		tried /home/usuario/.ivy2/local/org.scalaz/scalaz-effect_2.10/7.1.0/jars/scalaz-effect_2.10.jar
+[debug] 		tried https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0-sources.jar
+[info] downloading https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0-sources.jar
+[info] 	[SUCCESSFUL ] org.scalaz#scalaz-effect_2.10;7.1.0!scalaz-effect_2.10.jar(src) (317ms)
+[debug] 		tried https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar
+[info] downloading https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar
+[info] 	[SUCCESSFUL ] org.scalaz#scalaz-effect_2.10;7.1.0!scalaz-effect_2.10.jar (988ms)
+[debug] 		tried /home/usuario/.ivy2/local/org.scala-lang/scala-compiler/2.10.5/srcs/scala-compiler-sources.jar
+[debug] 		tried https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.5/scala-compiler-2.10.5-sources.jar
+[info] downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.5/scala-compiler-2.10.5-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.5/scala-compiler-2.10.5-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.5/scala-compiler-2.10.5-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.5/scala-compiler-2.10.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.5!scala-compiler.jar(src) (4801ms)
+[debug] 		tried /home/usuario/.ivy2/local/org.scala-lang/scala-reflect/2.10.5/srcs/scala-reflect-sources.jar
+[debug] 		tried https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5-sources.jar
+[info] downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.5!scala-reflect.jar(src) (1121ms)
+[debug] 		tried /home/usuario/.ivy2/local/org.scala-lang/jline/2.10.5/srcs/jline-sources.jar
+[debug] 		tried https://jcenter.bintray.com/org/scala-lang/jline/2.10.5/jline-2.10.5-sources.jar
+[info] downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.5/jline-2.10.5-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.5/jline-2.10.5-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.5/jline-2.10.5-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scala-lang/jline/2.10.5/jline-2.10.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#jline;2.10.5!jline.jar(src) (436ms)
+[debug] 		tried /home/usuario/.ivy2/local/org.fusesource.jansi/jansi/1.4/srcs/jansi-sources.jar
+[debug] 		tried https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
+[info] downloading https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
+[info] 	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.4!jansi.jar(src) (274ms)
+[debug] :: resolution report :: resolve 425ms :: artifacts dl 31414ms
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	::              FAILED DOWNLOADS            ::
+[warn] 	:: ^ see resolution messages for details  ^ ::
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	:: com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!sbteclipse-plugin.jar(src)
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT compile produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-compile.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT runtime produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-runtime.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT test produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-test.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT provided produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-provided.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT optional produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-optional.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT compile-internal produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-compile-internal.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT runtime-internal produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-runtime-internal.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT test-internal produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-test-internal.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT plugin produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-plugin.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT sources produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-sources.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT docs produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-docs.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT pom produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-pom.xml
+[debug] 	report for default#project$sources_2.10;0.1-SNAPSHOT scala-tool produced in /home/usuario/Documentos/lausana/asignaturas/clp/labs/clp2016-group50/project/target/resolution-cache/reports/default-project$sources_2.10-scala-tool.xml
+[debug] 	resolve done (425ms resolve - 31414ms download)

@@ -1,0 +1,98 @@
+\documentclass[nocopyrightspace,11pt,authoryear,preprint]{sigplanconf}
+
+\usepackage{amsmath}
+\usepackage{listings}
+
+% Paquetes para matemáticas:
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amscd} % Teoremas, fuentes y símbolos.
+\usepackage{tikz-cd} % para diagramas conmutativos
+ % Nuevo estilo para definiciones
+ \newtheoremstyle{definition-style} % Nombre del estilo
+ {5pt}                % Espacio por encima
+ {0pt}                % Espacio por debajo
+ {}                   % Fuente del cuerpo
+ {}                   % Identación: vacío= sin identación, \parindent = identación del parráfo
+ {\bf}                % Fuente para la cabecera
+ {.}                  % Puntuación tras la cabecera
+ {\newline}               % Espacio tras la cabecera: { } = espacio usal entre palabras, \newline = nueva línea
+ {}                   % Especificación de la cabecera (si se deja vaía implica 'normal')
+
+ % Nuevo estilo para teoremas
+ \newtheoremstyle{theorem-style} % Nombre del estilo
+ {5pt}                % Espacio por encima
+ {0pt}                % Espacio por debajo
+ {\itshape}           % Fuente del cuerpo
+ {}                   % Identación: vacío= sin identación, \parindent = identación del parráfo
+ {\bf}                % Fuente para la cabecera
+ {.}                  % Puntuación tras la cabecera
+ {\newline}               % Espacio tras la cabecera: { } = espacio usal entre palabras, \newline = nueva línea
+ {}                   % Especificación de la cabecera (si se deja vaía implica 'normal')
+
+ % Nuevo estilo para ejemplos y ejercicios
+ \newtheoremstyle{example-style} % Nombre del estilo
+ {5pt}                % Espacio por encima
+ {0pt}                % Espacio por debajo
+ {}                   % Fuente del cuerpo
+ {}                   % Identación: vacío= sin identación, \parindent = identación del parráfo
+ {\scshape}                % Fuente para la cabecera
+ {:}                  % Puntuación tras la cabecera
+ {.5em}               % Espacio tras la cabecera: { } = espacio usal entre palabras, \newline = nueva línea
+ {}                   % Especificación de la cabecera (si se deja vaía implica 'normal')
+
+ % Teoremas:
+ \theoremstyle{theorem-style}  % Otras posibilidades: plain (por defecto), definition, remark
+ \newtheorem{theorem}{Theorem}[section]  
+ \newtheorem{corollary}{Corollary}[section]  
+
+
+ % Definiciones, notas, conjeturas
+ \theoremstyle{definition-style}
+ \newtheorem{definition}{Definition}[section]
+  
+\usepackage[linesnumbered,ruled]{algorithm2e}  
+\usepackage{algorithmic}
+\usepackage{url}
+
+\lstdefinestyle{freefempp}{
+  language=C++,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{violet},
+  identifierstyle=\color{blue},
+  morekeywords={ border, buildmesh, cos, dx, dy, fespace, fill, func,
+    int2d, label, mesh, on, pi, plot, problem, sin, real, x, y},
+  % float,
+  frame=single,
+  numbers=left
+}
+
+\lstset{style=freefempp}
+
+\begin{document}
+\input{tool-listings}
+
+\title{An optimization framework for toolc}
+\subtitle{Compiler Construction '16 Final Report}
+
+\authorinfo{Rodrigo Raya}
+           {EPFL}
+           {rodrigo.raya@epfl.ch}
+
+\maketitle
+
+\section{Introduction}
+\input{introduction}
+
+\section{Examples}
+\input{examples}
+
+\section{Implementation}
+\input{implementation}
+
+\section{Possible Extensions}
+\input{extensions}
+
+
+\bibliographystyle{abbrvnat}
+\bibliography{bibliography.bib}
+
+\end{document}

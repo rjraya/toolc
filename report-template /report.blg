@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: abbrvnat.bst
+Database file #1: bibliography.bib.bib
+Warning--entry type for "CafeBabeError" isn't style-file defined
+--line 43 of file bibliography.bib.bib
+Warning--entry type for "WIDEinstr" isn't style-file defined
+--line 50 of file bibliography.bib.bib
+Warning--entry type for "LoopSlides" isn't style-file defined
+--line 57 of file bibliography.bib.bib
+You've used 5 entries,
+            2773 wiz_defined-function locations,
+            623 strings with 5219 characters,
+and the built_in function-call counts, 1500 in all, are:
+= -- 129
+> -- 50
+< -- 5
++ -- 20
+- -- 15
+* -- 78
+:= -- 244
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 21
+chr.to.int$ -- 5
+cite$ -- 10
+duplicate$ -- 80
+empty$ -- 152
+format.name$ -- 20
+if$ -- 311
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 33
+num.names$ -- 20
+pop$ -- 53
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 66
+stack$ -- 0
+substring$ -- 10
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 50
+warning$ -- 0
+while$ -- 15
+width$ -- 0
+write$ -- 69
+(There were 3 warnings)
